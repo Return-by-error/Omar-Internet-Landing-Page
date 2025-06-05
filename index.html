@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omar Internet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <!-- Hero Section -->
+    <section
+      class="hero h-[60vh] flex items-center justify-center text-white text-center px-6"
+    >
+      <div>
+        <h1 class="text-4xl md:text-6xl font-bold">
+          Fast & Reliable Internet Sharing
+        </h1>
+        <p class="text-xl md:text-2xl mt-4">
+          Connecting your neighborhood at lightning speed
+        </p>
+      </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="py-12 bg-white">
+      <div class="max-w-4xl mx-auto">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide p-6 bg-gray-100 rounded-lg shadow text-center"
+            >
+              <img
+                src="images/carousel1.jpg"
+                alt="Affordable Plans"
+                class="mx-auto mb-4 w-32 h-32 object-cover rounded-full"
+              />
+              <h3 class="text-xl font-semibold mb-2">Affordable Plans</h3>
+              <p>Choose from a range of plans to suit every budget.</p>
+            </div>
+            <div
+              class="swiper-slide p-6 bg-gray-100 rounded-lg shadow text-center"
+            >
+              <img
+                src="images/carousel2.jpg"
+                alt="Reliable Speeds"
+                class="mx-auto mb-4 w-32 h-32 object-cover rounded-full"
+              />
+              <h3 class="text-xl font-semibold mb-2">Reliable Speeds</h3>
+              <p>
+                Stable and fast connections for streaming, gaming, and work.
+              </p>
+            </div>
+            <div
+              class="swiper-slide p-6 bg-gray-100 rounded-lg shadow text-center"
+            >
+              <img
+                src="images/carousel3.jpg"
+                alt="Local Support"
+                class="mx-auto mb-4 w-32 h-32 object-cover rounded-full"
+              />
+              <h3 class="text-xl font-semibold mb-2">Local Support</h3>
+              <p>Friendly neighborhood support team just a call away.</p>
+            </div>
+          </div>
+          <!-- Pagination -->
+          <div class="swiper-pagination mt-4"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-10">Our Internet Packages</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="p-6 bg-white rounded-lg shadow">
+            <h3 class="text-2xl font-semibold mb-4">Basic</h3>
+            <p class="mb-4">10 Mbps Speed<br />Good for casual browsing</p>
+            <span class="text-xl font-bold block mb-2">$10/month</span>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded">
+              Choose Plan
+            </button>
+          </div>
+          <div class="p-6 bg-white rounded-lg shadow border-2 border-blue-600">
+            <h3 class="text-2xl font-semibold mb-4">Standard</h3>
+            <p class="mb-4">25 Mbps Speed<br />Ideal for families</p>
+            <span class="text-xl font-bold block mb-2">$20/month</span>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded">
+              Choose Plan
+            </button>
+          </div>
+          <div class="p-6 bg-white rounded-lg shadow">
+            <h3 class="text-2xl font-semibold mb-4">Premium</h3>
+            <p class="mb-4">50+ Mbps Speed<br />For gamers and streamers</p>
+            <span class="text-xl font-bold block mb-2">$35/month</span>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded">
+              Choose Plan
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12 bg-gray-100" id="contact">
+      <div class="max-w-xl mx-auto text-center px-4">
+        <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+        <p class="text-lg mb-6">Email us at:</p>
+        <a
+          href="mailto:youremail@example.com"
+          class="text-gray-800 text-lg no-underline mb-8 block"
+        >
+          Omar@example.com
+        </a>
+
+        <div class="flex justify-center space-x-6 mt-6 text-gray-700 text-2xl">
+          <!-- WhatsApp -->
+          <a
+            href="https://wa.me/1234567890"
+            target="_blank"
+            aria-label="WhatsApp"
+          >
+            <i class="fab fa-whatsapp hover:text-green-500"></i>
+          </a>
+          <!-- X (Twitter) -->
+          <a
+            href="https://x.com/yourhandle"
+            target="_blank"
+            aria-label="X (Twitter)"
+          >
+            <i class="fab fa-twitter hover:text-blue-500"></i>
+          </a>
+          <!-- Instagram -->
+          <a
+            href="https://instagram.com/yourhandle"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram hover:text-pink-500"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        speed: 700, // Keep your existing animation
+      });
+    </script>
+  </body>
+</html>
