@@ -1,5 +1,18 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .hero {
-  background-image: url("images/hero.jpg");
+  background-image: url("images/hero.jpg"); /* You can remove this if not used */
   background-size: cover;
   background-position: center;
+}
+
+/* SVG sizing for illustrations */
+.svg-small {
+  width: 100%;
+  max-width: 30rem;
+  max-height: 24rem;
+  margin-left: auto;
+  margin-right: auto;
 }
